@@ -1,15 +1,32 @@
 <?php
+
 /**
- * Create your routes in here. The name is the lowercase name of the controller
- * without the controller part, the stuff after the hash is the method.
- * e.g. page#index -> OCA\MSOfficeViewer\Controller\PageController->index()
+ * Nextcloud - MS Office Documents Viewer App
  *
- * The controller class has to be registered in the application.php file since
- * it's instantiated in there
+ * @author Sergio Souza
+ * @copyright 2017 Sergio Souza sergio.henrique.souza@gmail.com
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE
+ * License as published by the Free Software Foundation; either
+ * version 3 of the License, or any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU AFFERO GENERAL PUBLIC LICENSE for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public
+ * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
+ *
  */
-return [
-    'routes' => [
-	   ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
-	   ['name' => 'page#do_echo', 'url' => '/echo', 'verb' => 'POST'],
-    ]
-];
+
+namespace OCA\MSOfficeViewer\AppInfo;
+
+$application = new Application();
+
+$application->registerRoutes($this, array(
+    'routes' => array(
+        array('name' => 'display#showMSOfficeViewer', 'url' => '/', 'verb' => 'GET'),
+    )
+));
