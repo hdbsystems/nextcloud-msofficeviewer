@@ -1,5 +1,6 @@
 # nextcloud
 Nextcloud App MS Office Viewer
+[on development]
 
 Online viewer for ms office documents using http://view.officeapps.live.com/op/view.aspx?src=
 
