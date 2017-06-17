@@ -3,6 +3,7 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>msofficeviewer</id>
     <name>MS Office Viewer</name>
+    <summary>An MS Office Viewer for Nextcloud</summary>
     <description>An MS Office Viewer for Nextcloud</description>
     <licence>agpl</licence>
     <author mail="sergio.hemrique.souza@gmail.com" homepage="https://github.com/hdbsystems/nextcloud-msofficeviewer">Sergio Souza</author>
