@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>msofficeviewer</id>
+    <name>MS Office Viewer</name>
+    <description>An MS Office Viewer for Nextcloud</description>
+    <licence>agpl</licence>
+    <author mail="sergio.hemrique.souza@gmail.com" homepage="https://github.com/hdbsystems/nextcloud-msofficeviewer">Sergio Souza</author>
+    <version>0.0.1</version>
+    <namespace>MSOfficeViewer</namespace>
+    <category>office</category>
+    <bugs>https://github.com/hdbsystems/nextcloud-msofficeviewer/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="12" max-version="12"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>MS Office Viewer</name>
+            <route>msofficeviewer.page.index</route>
+        </navigation>
+    </navigations>
+</info>
