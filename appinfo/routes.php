@@ -27,6 +27,6 @@ $application = new Application();
 
 $application->registerRoutes($this, array(
     'routes' => array(
-        array('name' => 'display#showMSOfficeViewer', 'url' => '/', 'verb' => 'GET'),
+        array('name' => 'display#previewDocument', 'url' => '/', 'verb' => 'GET'),
     )
 ));
