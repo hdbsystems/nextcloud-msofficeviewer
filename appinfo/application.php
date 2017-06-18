@@ -39,7 +39,8 @@ class Application extends App {
         $container->registerService('DisplayController', function($c) {
             return new DisplayController(
                 $c->query('AppName'),
-                $c->query('Request')
+                $c->query('Request'),
+                $c->query('urlGenerator')->getURLGenerator()
             );
         });
     }
