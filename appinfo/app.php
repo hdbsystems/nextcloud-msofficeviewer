@@ -25,5 +25,11 @@ namespace OCA\MSOfficeViewer\AppInfo;
 
 use OCP\Util;
 
-Util::addScript('msofficeviewer', 'viewer');
-Util::addStyle('msofficeviewer', 'style');
+//Script for registering file actions
+$eventDispatcher = \OC::$server->getEventDispatcher();
+$eventDispatcher->addListener(
+        'OCA\Files::loadAdditionalScripts',
+        function() {
+                Util::addScript('msofficeviewer', 'fileactions');
+        }
+);
